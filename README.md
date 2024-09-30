@@ -106,7 +106,7 @@ In the Split Hopkinson Pressure Bar (SHPB) experiment, the characteristic relati
      Here, $S_s(t)$ represents the nominal stress in the specimen.
 
 
-### Reference
+## Reference
 
 The theory and equations used in this project are based on the following sources:
 
