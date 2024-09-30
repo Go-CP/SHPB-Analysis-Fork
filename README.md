@@ -57,7 +57,7 @@ This Python script analyses Split Hopkinson Pressure Bar (SHPB) experimental dat
 5. **View Plots and Analyze Results:**
 
     - After running the script, view the generated plots to analyze the results.
-    - The script will generate plots for filtered voltage data, Strain Rate-Time curve, stress-strain curve, and true stress-strain curve.
+    - The script will generate plots for filtered voltage-time, strain rate-time curve, stress-strain curve, and true stress-strain curve.
 
 
 ## Explanation for Stress-Strain Calculation in SHPB Experiment
