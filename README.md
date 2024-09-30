@@ -40,7 +40,7 @@ This Python script analyses Split Hopkinson Pressure Bar (SHPB) experimental dat
     or
     
     - Open the Python script (`mian.py`) in a text editor.
-    - edit the parameters in line 167 to line 176 according to your experiment setup.
+    - Edit the parameters in line 167 to line 176 according to your experiment setup.
     - Run the script using the following command:
 
     ```
