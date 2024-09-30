@@ -1,11 +1,15 @@
 # SHPB Analysis Tool
 <p align="center">
-<img src="https://raw.githubusercontent.com/Edgar-Mendonca/SHPB-Analysis/main/test_data/Figure_1.png" height="300" width="350" />
-<img src="https://raw.githubusercontent.com/Edgar-Mendonca/SHPB-Analysis/main/test_data/Figure_2.png" height="300" width="300" />
-<img src="https://raw.githubusercontent.com/Edgar-Mendonca/SHPB-Analysis/main/test_data/Figure_3.png" height="300" width="400" />
+<img src="https://github.com/Go-CP/SHPB-Analysis/blob/main/test/Figure00.jpg" height="150" width="200" />
+<img src="https://github.com/Go-CP/SHPB-Analysis/blob/main/test/Figure01.jpg" height="150" width="200" />
+<img src="https://github.com/Go-CP/SHPB-Analysis/blob/main/test/Figure02.jpg" height="150" width="200" />
+<img src="https://github.com/Go-CP/SHPB-Analysis/blob/main/test/Figure10.jpg" height="150" width="200" />
+<img src="https://github.com/Go-CP/SHPB-Analysis/blob/main/test/Figure11.jpg" height="150" width="200" />
+<img src="https://github.com/Go-CP/SHPB-Analysis/blob/main/test/Figure12.jpg" height="150" width="200" />
 </p>
 
 This Python script analyses Split Hopkinson Pressure Bar (SHPB) experimental data to calculate stress-strain curves and other relevant parameters. Follow the instructions below to use the script with your experimental data.
+
 
 ## Instructions
 
@@ -17,44 +21,41 @@ This Python script analyses Split Hopkinson Pressure Bar (SHPB) experimental dat
 
 2. **Prepare Experimental Data:**
 
-    - Ensure that your experimental data is stored in a CSV or Excel file.
-    - The file should contain columns for "Time", "Incident", "Reflected", and "Transmitted" voltages.
+    - Ensure that your experimental data is stored in a CSV file.
+    - The file should contain columns for "Time", "Incident", and "Transmitted" voltages.
     - Voltage values should be in volts (V).
-    - Specify the file name in the Python script (`analysis.py`) using the `filename` variable. For example:
 
-    ```python
-    filename = "path/to/your/data_file.csv"
-    ```
-
-3. **Customize Input Parameters:**
-
-    - Open the Python script (`analysis.py`) in a text editor.
-    - Update the input parameters according to your experiment setup. Parameters such as Young's modulus, density, initial length, and cross-sectional areas should be adjusted based on your experimental conditions.
-
-4. **Run the Script:**
+3. **Edit or Input Parameters:**
 
     - Run the script using the following command:
 
     ```
-    python analysis.py
+    python main.py
     ```
+    - Input parameters according to your experment setup
+    - Click Open File
+
+    or
+    
+    - Open the Python script (`mian.py`) in a text editor.
+    - edit the parameters in line 167 to line 176 according to your experiment setup.
+    - Run the script using the following command:
+
+    ```
+    python main.py
+    ```
+    -Click Open File
+
+4. **Selecting Regions:**
+
+   - For Incident Voltage: Press and drag on the subplot (labelled 'Incident Voltage') to select a region of interest.
+   - For Reflected Voltage: Press and drag on the subplot (labelled 'Reflected Voltage') to select a region of interest.
+   - For Transmitted Voltage: Press and drag on the subplot (labelled 'Transmitted Voltage') to select a region of interest.
 
 5. **View Plots and Analyze Results:**
 
     - After running the script, view the generated plots to analyze the results.
-    - The script will generate plots for filtered voltage data, strain data, stress-strain curve, and true stress-strain curve.
-
-## Example Usage
-
-Here's an example of how to use the script with your experimental data:
-
-1. Ensure that Python and the required dependencies are installed on your system.
-2. Prepare your experimental data in a CSV or Excel file format.
-3. Customize the input parameters in the `analysis.py` script based on your experiment setup.
-4. Specify the file name of your experimental data in the script.
-5. Run the script using `python analysis.py`.
-6. Analyze the generated plots to interpret the results of your SHPB experiment.
-
+    - The script will generate plots for filtered voltage data, Strain Rate-Time curve, stress-strain curve, and true stress-strain curve.
 
 
 ## Explanation for Stress-Strain Calculation in SHPB Experiment
@@ -102,31 +103,6 @@ In the Split Hopkinson Pressure Bar (SHPB) experiment, the characteristic relati
         - $\sigma_s(t) = S_s(t) \cdot (1 - e_s(t))$    <br />
      Here, $S_s(t)$ represents the nominal stress in the specimen.
 
-# SHPB Cropping Tool
-<p align="center">
-<img src="https://raw.githubusercontent.com/Edgar-Mendonca/SHPB-Analysis/main/test_data/Figure_4.png" height="" width="" />
-</p>
-
-1. **Data Preparation:**
-   - Prepare your SHPB data in CSV format. Each CSV file should contain three columns: 'Time' and the respective voltage data (e.g., 'Incident' and  'Transmitted').
-
-2. **Launching the Tool:**
-   - Run the Python script `crop.py`.
-   - The tool will display a graphical interface with multiple subplots.
-
-3. **Selecting Regions:**
-   - For Incident Voltage: Click and drag on the subplot (labelled 'Incident Voltage') to select a region of interest.
-   - For Reflected Voltage: Click and drag on the subplot (labelled 'Reflected Voltage') to select a region of interest.
-   - For Transmitted Voltage: Click and drag on the subplot (labelled 'Transmitted Voltage') to select a region of interest.
-
-4. **Saving Selected Data:**
-   - The selected regions will be displayed on their respective subplots.
-   - The selected data will be saved automatically to CSV files in the same directory as the script.
-     - Selected Incident Voltage data will be saved to `selected_incident.csv`.
-     - Selected Reflected Voltage data will be saved to `selected_reflected.csv`.
-     - Selected Transmitted Voltage data will be saved to `selected_transmitted.csv`.
-
-
 
 ### Reference
 
@@ -134,6 +110,7 @@ The theory and equations used in this project are based on the following sources
 
 - Ramesh, K.T. (2008). High Rates and Impact Experiments. In: Sharpe, W. (eds) *Springer Handbook of Experimental Solid Mechanics*. Springer Handbooks. Springer, Boston, MA. [DOI: 10.1007/978-0-387-30877-7_33](https://doi.org/10.1007/978-0-387-30877-7_33)
 - Kolsky, H. (1963). Stress Waves in Solids. *United Kingdom: Dover Publications*.
+
 
 ## License
 
