@@ -3,6 +3,8 @@
 <img src="https://github.com/Go-CP/SHPB-Analysis/blob/main/test/Figure00.jpg" height="150" width="200" />
 <img src="https://github.com/Go-CP/SHPB-Analysis/blob/main/test/Figure01.jpg" height="150" width="200" />
 <img src="https://github.com/Go-CP/SHPB-Analysis/blob/main/test/Figure02.jpg" height="150" width="200" />
+</p>
+<p align="center">
 <img src="https://github.com/Go-CP/SHPB-Analysis/blob/main/test/Figure10.jpg" height="150" width="200" />
 <img src="https://github.com/Go-CP/SHPB-Analysis/blob/main/test/Figure11.jpg" height="150" width="200" />
 <img src="https://github.com/Go-CP/SHPB-Analysis/blob/main/test/Figure12.jpg" height="150" width="200" />
@@ -44,7 +46,7 @@ This Python script analyses Split Hopkinson Pressure Bar (SHPB) experimental dat
     ```
     python main.py
     ```
-    -Click Open File
+    - Click Open File
 
 4. **Selecting Regions:**
 
