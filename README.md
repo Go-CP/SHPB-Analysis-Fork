@@ -116,6 +116,6 @@ The theory and equations used in this project are based on the following sources
 
 ## License
 
-This project is licensed under the  Apache-2.0 License. - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the  MIT license. - see the [LICENSE](LICENSE) file for details.
 
 
